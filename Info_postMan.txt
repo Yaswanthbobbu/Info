@@ -1,0 +1,20 @@
+PostMan : 
+
+Wizdler : Soap
+Jsonpathfinder : Rest
+
+https://restcountries.eu/
+
+http://xpather.com/
+http://www.xpathtester.com/xpath
+Chropath addon
+
+
+Selenium : 
+
+
+https://selenium-python.readthedocs.io/
+https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html
+
+
+

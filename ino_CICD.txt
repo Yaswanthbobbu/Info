@@ -1,0 +1,28 @@
+Jenkins Pipeline :
+
+1. Overview of CI/CD
+
+2. what is Jenkins pipeline
+
+3. Jenkins pipeline jobs
+
+4. How to create pipeline in jenkins
+	1. Pliugin
+	2. Groovy Script [1. Scripted 
+	                  2. Declarative]
+
+5. How to view pipeline
+
+Types of Creating Pipelines:
+
+Pipeline Concepts : 
+Pipeline / Node {single junkin server in my machine}
+Stage  .Step
+
+Declarative : jenkins file will be part of project code in CMS(github)
+
+project in Jenkins  (Error)
+
+
+links : 
+https://www.jenkins.io/doc/book/pipeline/jenkinsfile/

@@ -1,0 +1,75 @@
+1. Installs
+   Python/Pycharm/selenium/robotframework/robotframework-seleniumlibrary/pip install -U robotframework-pabot
+   robotframework-databaselibrary & pymysql
+   plugin : intellibot
+   Path variable : /scripts
+   copy drivers to scripts
+
+2. Folders/extensions/sections/testcases/reports
+   http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
+
+3. working with Webelements 
+   Inputbox
+
+4. Radiobuttons,check boxes
+
+5. Dropdown,Listbox 
+
+6. Speed,Time (selenium speed/Timeout,sleep, Implicit wait)
+
+7. Close (all) browser(s)
+
+8. Handle alerts/Frame
+
+9. Tabbed windows/browser windows
+
+10. Navigations	[3]
+
+11. Element/Page Screenshot
+
+12. MouseActions(right click, double, drag and drop)
+
+13. User defined keywords	[3]
+
+14. Scrolling using Javascript [3]
+
+15. For Loop(L)
+	[https://robocorp.com/docs/languages-and-frameworks/robot-framework/for-loops]
+
+16.	Count&Extract(e)
+
+17.	Handle Web table
+
+18.	Data Driven scripts  
+
+19.	Data Driven Excel(e)
+    pip install -U robotframework-datadriver[XLS]    
+
+20.	Database Testing 
+	robotframework-databaselibrary & pymysql
+	https://franz-see.github.io/Robotframework-Database-Library/api/0.5/DatabaseLibrary.html
+
+21.	Setup & Tear down 
+
+22.	Grouping tests using Tags
+
+23. POM(L)
+
+24.	parallel test execution [Run test/parallel test/save result in folder/run using sing window bat file]
+
+25.	Headless browsing Test
+
+26.	Run Tests in Jenkins
+
+
+Test Links : 
+https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F
+https://opensource-demo.orangehrmlive.com/
+	
+http://demo.automationtesting.in/Register.html
+http://demowebshop.tricentis.com/register
+https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html
+https://swisnl.github.io/jQuery-contextMenu/demo.html (Mouse Actions)
+http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
+http://demo.guru99.com/test/newtours/ (keywords)
+https://www.countries-ofthe-world.com/flags-of-the-world.html (Scrolling)

@@ -1,0 +1,124 @@
+TUPLE Packing  A = 10,20,30
+
+TUPLE Unpacking
+A = 1,2,3,4
+a,b,c,d = A    # d=4 
+
+SWAP : a,b = b,a
+
+All variables are just tags and all Identifiers are variables   (Var never store data in python)
+
+print(type(num)) = int
+Print(type(name)) = string
+
+operations = + - * % / // (9//4 = 2)
+
+Data types : Numeric string  Boolean None
+
+how to identify if two variables are pointing to same ; print(a is c) # True 
+
+for -else while -else 
+
+current version  = import sys  Print(sys.version)     path platform exit executable modules
+                            re    findall   search split sub
+							os   mkdir()  chdir() rm()  getcwd() rename() remove() popopen() close()
+
+impport sys
+print(sys.getrefcount(x))
+GETREFCOUNT # No. of references pointing to particular object
+
+
+range() is available but not xrange [to run loop in x number of times ]
+
+python checks : Syntax and compiles the byte code (.pyc file is generated) >> loads bytecode into memory and run
+
+using reload() we can reload module 
+
+list is python inbuilt data structure  (to store differnt items)  [array] [list]
+
+      Sequence types : list strings tuples 
+	  
+slicing technique :  a[s0:e1]
+                     a[::-1] >>reverse
+					 a[2::2] >> [3,5,7]
+					 
+joining = list = [1,2,3]
+				num = ','.join(str(i) for i in list)
+				print(num)
+				
+append >> add lists to the existing list  (adds as a single object)
+
+extend >> merge all items in the list 
+
+string = arthematic , slicing , len, max, min, in, not in,    
+		 Testing strings >>  is.alphanum()  >> is.alpha()  >> is.digit() >> is.identifier() >> is.lower() >> is.upper >> is.space()
+		 search sub strings = s.endswith(nth), s.startswith("bob")  >> s.find() returns position int  s.count("O") #3
+		 String converting >> s.upper, s.lower, s.capitalize, s.replace, 
+		 string comparisons,  concatenate 
+
+dictornary . {key: values}   # print(friends['key']) # values 
+			friends['key1'] = value
+			del friends['key1']
+merge dictonary : a.udpate(b)
+
+
+b = list(reversed(a))
+print(b)
+print(sorted(a))
+
+Jnames = [name for name in names if name[0] == 'j']
+
+set = unordered collection of unique objects
+
+print(len(set(a)))
+
+
+Errors : 
+
+type error : when expected type doesnt match with given type 
+value error : when an expected value is not given 
+name error : try to access of variable/function
+IO error : try to access file
+index error : try to access 10th index list 
+key error : try to access the dictnory  
+
+
+Abstraction:  process of hiding real implimentation from actual and only allowing to use the application
+
+Encapusaltion with respect to functions
+supports inner function concept   function defined with in function   >> nested function 
+
+Inheritence : 
+Acquring the properties of variables from one class to another class 
+provides code reusibility,  makes it easier to create and maintain applications :  Super/parent/Base class >> (inherited) derived/child/subclass class
+single >> multi >> hirarchy >> Multiple hirarchy (child having multiple parents)
+
+Polymorphism : 
+
+F= open("file.txt","a+")  
+F.write("content")
+f.close()
+
+Mutable >>  List[slower] set(a) Dictonaries {}  ( append() / extend())  >> remove / pop 
+
+Immutable >> Tuple(faster) Strings Numbers
+
+
+What is Module >>  .py is a file >> which imports other modules like objects and attributes
+Folder >> package of module 
+What is Package >>   high levl entity can have modules / submodules of subfolders
+
+
+import random
+print(random.random())  Returns [0 1]
+from  random import shuffle 
+shuffle(x)
+list.sort(x)
+
+DataBase connect :  predefined modules are available to connect to data base (Oracle = cx_oracle module 
+
+Excel connect :  import openpyxl
+
+ltime = time.asctime(time.ltime(time.time())) print (local time)
+
+strip() removes spaces from begining and ending of a string

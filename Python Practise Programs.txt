@@ -1,0 +1,231 @@
+# 15 Basic programs practised
+
+#Reverse the string
+
+num1= str(input("Enter the number to be reversed:"))
+if num1[0]=='-':
+    print(str('-'+num1[:0:-1]))
+else:
+    print(str(num1[::-1]))
+###################################################
+#Geeks for Geeks
+
+#add two numbers
+
+num1 = str(input('Enter the first number:'))
+num2 = str(input('Enter the first number:'))
+
+out1 = eval(num1)+eval(num2)
+print("sum of {0} and {1} is {2}".format(num1,num2,out1))
+#######################################################
+#Maximum of two numbers
+
+num1 = int(input("Enter the num1:"))
+num2 = int(input("Enter the num2:"))
+
+if num1 > num2:
+    print("num1 is greater")
+else:
+    print("num2 is greater")
+
+print(max(num1,num2))
+########################################################
+#Find the sum of n numbers
+
+def fun(n):
+    if n < 0:
+        return (n + fun(n+1))
+    elif n >= 0 : 
+        return n if (n == 0 or n == 1) else n + fun(n - 1)
+
+print(fun(n))
+################################################
+#Find the factorial
+
+def fun(n):
+    if n >= 0:
+        return 1 if (n == 0 or n == 1) else n * fun(n - 1)
+    elif n < 0:
+        return "Negative number"
+
+print(fun(n))
+
+#Using math
+import math
+
+def factorial(n):
+    return(math.factorial(n))
+
+num =5
+print("Factorial of {} is {}".format(num,factorial(num)))
+#############################################################
+#Find the simple interest
+
+def simpleInterest(p,t,r):
+        print("Enter the princ amount:",p)
+        print("Enter the tim amount:",t)
+        print("Enter the rate amount:",r)
+
+        sime = ((p*t*r)/100)
+        print(sime)
+simpleInterest(8,6,8)
+###################################################
+#Find the coompund interest
+
+def compint(p, t, r):
+        print("Enter the princ amount:", p)
+        print("Enter the tim amount:", t)
+        print("Enter the rate amount:", r)
+
+        Amou = p*(pow((1+r/100) , t))
+        comp = (Amou - p)
+        print(comp)
+
+compint(8, 6.5, 4)
+#####################################################
+# To check the Arm strong number 
+#####################################################
+#Check for the area fo triangle
+
+def area(r):
+    PI = 3.16
+    return  (PI*r*r/2)
+
+print(area(10))
+
+#####################################################
+# to Identify prime number in 2 ways
+
+count = 0
+if num > 1:
+    for i in range(1,num+1):
+        if num%i == 0:
+            count+=1
+    if count == 2:
+        print("prime")
+    else:
+        print("non prime")
+else: 
+    print("Num is a negative number")
+
+num = int(input("enter number:"))
+if num > 1:
+    for i in range(2,int(num/2)+1):
+        if num%i == 0:
+            print(num, "is a non prime")
+            break
+    else:
+        print(num,"is a prime")
+else:
+    print("negative number")
+#####################################################
+#find all prime numbers in a range
+# to identify all the prime no. in the list
+
+start_index = int(input("Enter the start num:"))
+end_index = int(input("Enter the end num:"))
+list = []
+
+if end_index > start_index > 0 :
+    for i in range(start_index,end_index+1):
+        if i >1 :
+            for j in range(2,i):
+                if (i%j == 0):
+                    break
+            else:
+                list.append(i)
+
+    print(list)
+
+else:
+    print("Either one of indexs are negative or incorrect order")
+
+
+#####################################################
+#Fabinocci series
+num1 = int(input("Enter the number:"))
+num2 = int(input("Enter the number:"))
+Fabi = int(input("Enter the Fabi number:"))
+count = 0
+for i in range(1,Fabi+1):
+    count = num1 + num2
+    num1 = num2
+    num2 = count
+
+print(count,"is the Fabith number")
+# recursive fucntion 
+
+def Fabi(num):
+    if num < 0:
+        print("Print Postive numbers")
+    elif num == 1:
+        return 0
+    elif num == 2:
+        return 1
+    else:
+        return Fabi(num-1) + Fabi(num-2)
+       
+print(Fabi(4))
+#####################################################
+import math
+
+def isperfectsqr(x):
+    s = int(math.sqrt(x))
+    return s*s == x
+def isfabi(n):
+    return isperfectsqr(5*n*n+4) or isperfectsqr(5*n*n-4)
+
+start_index = int(input('Enter start index:'))
+end_index = int(input('Enter end index:'))
+for i in range(start_index,end_index+1):
+    if (isfabi(i) == True):
+        print(i,"This is fabi")
+    else:
+        print(i,"This is not a fabi")
+#####################################################
+#print ASCII value of a character
+
+c = 'a'
+print("The ASCII value of given number is:", (ord(c)))
+#####################################################
+# Find sum of squares
+
+n = int(input("Enter the number:"))
+count = 0
+
+def funsqr(n):
+    return (n*n)
+if n >= 0 :
+    for i in range(1,n+1):
+        count = funsqr(i) + count
+    print(count)
+else:
+    print("Negative number")
+#####################################################
+# Find sum of cubes
+
+n = int(input("Enter the number:"))
+count = 0
+
+def funsqr(n):
+    return (n*n*n)
+if n >= 0 :
+    for i in range(1,n+1):
+        count = funsqr(i) + count
+    print("The sum of cubes of {} is {}".format(n,count))
+else:
+    print("Negative number")
+#####################################################
+
+
+
+
+
+
+
+
+
+
+
+
+

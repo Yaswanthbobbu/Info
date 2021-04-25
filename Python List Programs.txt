@@ -1,16 +1,216 @@
 #################################################
+#List to interchange
+
+def inter(A):
+    A[0],A[-1] = A[-1],A[0]
+    return A
+
+Arr = [1,2,3,4]
+print(inter(Arr))
+mylist = [12,14,63,32,34,56,34,23,44]
+size =len(mylist)
+
+temp =mylist[0]
+mylist[0]= mylist[size-1]
+mylist[size-1]= temp
+
+print(mylist)
+
+#Tuple variable
+get=(mylist[-1],mylist[0]) #packing
+mylist[0],mylist[-1]=get
+print(mylist)
+
+# * Operand
+start,*midle,end=mylist
+mylist=[end,*midle,start]
+print(mylist)
+
+#pop method
+first=mylist.pop(0)
+last=mylist.pop(-1)
+
+mylist.insert(0,last)
+mylist.append(first)
+
+print(mylist)
+#################################################
+from operator import length_hint
+import time
+
+start_index = time.time()
+Arr = [1,2,3,4]
+print(len(Arr))
+end_index = (time.time() - start_index)
+
+start_index_len = time.time()
+print(length_hint(Arr))
+end_index_len = (time.time() - start_index_len)
+
+print(start_index_len,end_index)
+print(start_index_len,end_index_len)
+#################################################
+#Item exists in listdef num(n):
+    flag = 'false'
+    for i in list:
+        if(i == n):
+            flag = 'true'
+    return flag
+
+list = [1,2,3,4,5]
+ans = num(int(input("Enter number:")))
+#################################################
+#clear the list
+
+list.clear()
+list*= 0
+list = []
+del list[:]
+#################################################
+#reverse the list
+
+list = [1,2,3,4]
+
+list1 = list[::-1]
+def rev(list):
+    list.reverse()
+    return list
+list2 = rev(list)
+def revd(list):
+    return [ele for ele in reversed(list)]
+print(list)
+print(list1)
+print(list2)
+#################################################
+#sum of ele in list
+list = [1,2,3,4]
+
+print(sum(list))
+count = 0
+for i in list:
+    count = count + i
+print(count)
+count = 0
+i = 0
+while i < len(list):
+    count = count + list[i]
+    i = i+1
+print(count)
+def sum1(list,size):
+    if (size ==0):
+        return 0
+    else :
+        return list[size-1] + sum1(list,size-1)
+print(sum1(list,len(list)))
+
+#################################################
+#multiply all number
+
+#using for loop
+list = [1,2,3,4]
+prod = 1
+for i in list:
+    prod = prod * i
+print(prod)
+#using while loop
+prod = 1
+i= 1
+while (i < len(list)+1):
+    prod = prod * i
+    i = i+1
+print(prod)
+#using numpy/math
+import numpy
+output = numpy.prod(list)
+print(output)
+#using numpy array
+from functools import reduce
+result = reduce((lambda x,y: x*y),list)
+print(result)
+#################################################
+#smallest
+
+list = [1,2,3,4]
+
+#min
+print(min(list))
+#for/rec
+min = list[0]
+for i in list:
+    if min > i:
+        min = i
+print(min)
+#sort
+list.sort()
+print(list[0])
+
+#user input
+list1 = []
+num = int(input("Enter num of elements:"))
+for i in range(1,num+1):
+
+    ele = int(input("Enter number:"))
+    list1.append(ele)
+print("Least number is :", min(list1))
+
+#################################################
+#greatest
+
+list = [1,2,3,4]
+
+#min
+print(max(list))
+#for/rec
+max1 = list[0]
+for i in list:
+    if max1 < i:
+        max1 = i
+print(max1)
+#sort
+list.sort()
+print(list[-1])
+#user input
+list1 = []
+num = int(input("Enter num of elements:"))
+for i in range(1,num+1):
+
+    ele = int(input("Enter number:"))
+    list1.append(ele)
+print("Least number is :", max(list1))
+
+#################################################
+#even/odd 
+for num in list1:
+    if num % 2 == 0:
+        print(num, end=" ")
+#while
+while (num < len(list1)):
+    if num % 2 == 0:
+        print(list1[num], end=" ")
+    num += 1
+even_nos = [num for num in list1 if num % 2 == 0]
+
+even = list(filter(lambda x:(x%2 == 0),list))
 #################################################
 #################################################
 #################################################
 #################################################
 #################################################
 #################################################
-#################################################
-#################################################
-#################################################
-#################################################
-#################################################
-#################################################
-#################################################
-#################################################
-#################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

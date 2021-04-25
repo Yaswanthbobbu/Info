@@ -122,3 +122,19 @@ Excel connect :  import openpyxl
 ltime = time.asctime(time.ltime(time.time())) print (local time)
 
 strip() removes spaces from begining and ending of a string
+
+BUILT IN Modules :OS SYS MATH PLATFORM PARAMIKO
+
+
+'''
+always included in '' or ""
+\n -- newline
+\b -- backspace
+\t -- tabspace
+\  --  escape    print("This is \"yash\" name")
+\a  -- alert sound
+if providing window path then use \\..\\
+Data types : Num Str Bool None
+print(f"{x} {y}")
+print("{} {}".format(x,y))
+'''
